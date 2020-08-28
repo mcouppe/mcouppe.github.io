@@ -65,6 +65,9 @@ main {
 .carouselBtn:hover {
   cursor: pointer;
 }
+button:focus {
+  border: none;
+}
 .btnRight {
   transform: scaleX(-1);
   float: right;
