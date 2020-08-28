@@ -1,0 +1,133 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  border-bottom: 1px solid rgba(167, 167, 167, 0.658);
+}
+footer {
+  border-top: 1px solid rgba(167, 167, 167, 0.658);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+}
+.navLink {
+  text-decoration: none;
+  color: rgb(167, 167, 167);
+  transition: 0.5s ease-out;
+}
+.active {
+  color: rgb(80, 80, 80);
+}
+.navLink:hover,
+.navLink:focus {
+  color: #75003b;
+  box-shadow: 0 4px 2px -2px #a7005477;
+}
+header li {
+  margin-right: 15px;
+}
+header li:last-child {
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  color: rgb(80, 80, 80);
+}
+header span {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.texteContact {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  grid-column-gap: 100px;
+  /* margin: 5% 10% 0 10%; */
+  padding: 5% 10%;
+  border-bottom: 1px solid rgb(167, 167, 167);
+  word-spacing: 2px;
+  transition: 0.5s ease-out;
+}
+#hr img {
+  width: 100%;
+  height: 100%;
+}
+
+.texteContact a {
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+  transition: 0.5s ease-out;
+}
+.texteContact p {
+  transition: 0.5s ease-out;
+  color: #1f1f1f;
+}
+.texteContact p:hover {
+  color: #a70053;
+  transform: translateY(15px);
+}
+.texteContact p:hover a {
+  color: #75003b;
+  transform: translateY(15px);
+}
+.bottomPic {
+  margin: 50px 25%;
+  width: 50%;
+}
+footer p {
+  text-align: center;
+  font-size: 12px;
+  margin: 0 auto;
+  color: rgb(80, 80, 80);
+  letter-spacing: 0.5px;
+}
+
+/******************************************************************************************/
+/**********************************MEDIA QUERIES**************************************/
+/******************************************************************************************/
+
+@media (max-width: 600px) {
+  header li {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  header li:last-child {
+    display: none;
+  }
+  .texteContact {
+    display: inline;
+    border-bottom: none;
+  }
+
+  .texteContact p {
+    padding: 0 15%;
+  }
+
+  .texteContact h2 {
+    margin: 20% auto 10% auto;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+  }
+  #hr {
+    display: none;
+  }
+
+  #separateur {
+    display: none;
+  }
+  #contactFr {
+    display: none;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  footer p {
+    font-size: 10px;
+  }
+}

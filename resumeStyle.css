@@ -1,0 +1,203 @@
+/***********************************************/
+/********************TITLES********************/
+/***********************************************/
+#resumeContainer h1 {
+  display: inline-block;
+  margin: 10px 0 0 50px;
+  font-family: blakely, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 78px;
+  background-color: black;
+  color: white;
+}
+#resumeContainer h1:hover {
+  transform: translate(5px, -7px);
+}
+#resumeContainer h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: right;
+  margin: 0 0 20px 0;
+}
+#resumeContainer h3 {
+  display: inline-block;
+  font-family: blakely, sans-serif;
+  font-weight: normal;
+  font-size: 42px;
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+}
+/***********************************************/
+/*******************FONTS********************/
+/*******& GENERALITIES**********************/
+
+#resumeContainer p,
+#resumeContainer li,
+#resumeContainer span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+}
+.boldTxt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300 !important;
+}
+.italTxt {
+  font-style: italic;
+  font-size: 16px !important;
+}
+#resumeContainer hr {
+  display: none;
+  /* A FAIRE SI TEMPS : stylisation plus complexe, la meilleure solution serait d'utiliser border-top mais du coup il faut que les titres soient incorporés dans d'autres div et que la taille totale de la div = taille de la ligne et le texte s'insère dedans */
+}
+/***********************************************/
+/*********************INFO********************/
+/**********************************************/
+.infoSection {
+  width: 60%;
+  text-align: center;
+  margin: 2% auto;
+}
+.infoSection a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  transition: 0.5s ease-out;
+}
+.infoSection a:hover {
+  color: #75003b;
+  font-size: 30px;
+}
+/***********************************************/
+/*******************PROFILE*******************/
+/**********************************************/
+
+.profile {
+  width: 65%;
+  margin: 2% auto;
+}
+.profile p {
+  padding: 0 10%;
+  text-align: justify;
+}
+/***********************************************/
+/*****************TECHSKILLS*****************/
+/**********************************************/
+
+.techSkills {
+  width: 75%;
+  margin: 2% auto;
+}
+
+.toolsTxt {
+  font-style: italic;
+  font-weight: 300 !important;
+  padding: 10px 0 0 0;
+}
+.techSkills ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px;
+  margin: 20px 0 15px 60px;
+}
+.techSkills li {
+  transition: 0.5s ease-out;
+}
+.techSkills li:hover {
+  color: #75003b;
+  font-size: 24px !important;
+}
+/**********************************************/
+/**************BOTTOM PART****************/
+/*********************************************/
+.bottomPart {
+  display: flex;
+  justify-content: space-between;
+}
+/**********************************************/
+/****************EDUCATION*****************/
+/**********************************************/
+.education {
+  width: 350px;
+  margin: 30px 5%;
+}
+.coursesList,
+.coursesList span {
+  font-size: 12px !important;
+  transition: 0.5s ease-out;
+}
+.education:hover .coursesList {
+  font-size: 24px !important;
+  padding: 5px 15px;
+  word-spacing: 250px;
+  color: #75003b;
+}
+/**********************************************/
+/*****************WORK XP*******************/
+/**********************************************/
+.workXp {
+  width: 350px;
+  text-align: right;
+  margin: 30px 50px;
+}
+.workXpTxt,
+.workXpTxt span {
+  font-size: 14px !important;
+  padding: 0 30px 0 0;
+}
+.workXp p {
+  margin: 5px 0 0 0;
+}
+
+/**********************************************/
+/******************MOBILE*******************/
+/**********************************************/
+
+@media (max-width: 600px) {
+  #resumeContainer h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  #resumeContainer h2 {
+    font-size: 24px;
+  }
+  #resumeContainer p,
+  #resumeContainer li,
+  #resumeContainer span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+  }
+  .profile {
+    width: 75%;
+    margin: 2% auto;
+  }
+  .techSkills ul {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .techSkills li {
+    margin: 5px 25px;
+  }
+  .bottomPart {
+    flex-wrap: wrap;
+  }
+  .education {
+    margin: 10px 50px 10px 10px;
+  }
+  .workXp {
+    margin: 10px 10px 20px 50px;
+  }
+  .workXpTxt,
+  .workXpTxt span {
+    font-size: 14px !important;
+    padding: 0 0 0 25px;
+  }
+  .workWrap {
+    margin-bottom: 25px;
+  }
+}
