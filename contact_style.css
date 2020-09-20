@@ -113,6 +113,9 @@ footer p {
 
   .texteContact p {
     padding: 0 15%;
+    color: #3f3f3f;
+    font-size: 14px;
+    text-align: justify;
   }
 
   .texteContact h2 {
