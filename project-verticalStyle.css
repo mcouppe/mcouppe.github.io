@@ -170,7 +170,7 @@ footer p {
     display: block;
   }
   .carousel_photo {
-    width: 100%;
+    max-width: 100%;
   }
   .slick-prev,
   .slick-next {
@@ -198,6 +198,9 @@ footer p {
   article p {
     width: 90%;
     margin: 20px auto;
+  }
+  article img {
+    max-width: 100%;
   }
   .anchorTopDsktp {
     display: none;
