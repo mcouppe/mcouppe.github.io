@@ -1,3 +1,12 @@
+/* ADD 09/20/20 */
+/* removing outline with google chrome updates : */
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+
+/* ********************************************************************* */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -103,8 +112,8 @@ aside h3 {
 }
 article {
   margin: 20px auto;
+  width: 60%;
   text-align: center;
-  width: 50%;
 }
 .spanEffect {
   color: #75003b;
@@ -115,6 +124,10 @@ article {
 article p {
   color: rgb(80, 80, 80);
   line-height: 26px;
+  width: 100%;
+}
+article img {
+  max-width: 100%;
 }
 .anchorTopDsktp {
   position: fixed;
@@ -143,7 +156,7 @@ footer p {
   }
 
   .carousel_photo {
-    width: 500px;
+    max-width: 500px;
   }
   .carouselBtn {
     width: 30px;
