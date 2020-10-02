@@ -60,7 +60,6 @@
 }
 #resumeContainer hr {
   display: none;
-  /* A FAIRE SI TEMPS : stylisation plus complexe, la meilleure solution serait d'utiliser border-top mais du coup il faut que les titres soient incorporés dans d'autres div et que la taille totale de la div = taille de la ligne et le texte s'insère dedans */
 }
 /***********************************************/
 /*********************INFO********************/
@@ -132,7 +131,8 @@
 /**********************************************/
 .education {
   width: 350px;
-  margin: 30px 5%;
+  margin: 30px;
+  justify-content: flex-start;
 }
 .coursesList,
 .coursesList span {
@@ -141,7 +141,7 @@
 }
 .education:hover .coursesList {
   font-size: 24px !important;
-  padding: 5px 15px;
+  padding: 5px 30px;
   word-spacing: 250px;
   color: #75003b;
 }
